@@ -1,0 +1,21 @@
+https://docs.qmk.fm/newbs_getting_started
+https://github.com/qmk/qmk_firmware/issues/24614
+
+sudo apt update
+sudo apt upgrade
+sudo apt install python3 pipx
+pipx install qmk
+pipx ensurepath
+
+# close and reopen terminal
+
+sudo apt install gcc-arm-none-eabi gcc-avr avrdude dfu-programmer dfu-util avr-libc
+qmk setup
+
+# to view a list of all available to compile
+qmk list-keyboards
+
+# to do a test compilatiom for the corne r2g
+qmk compile -kb crkbd/r2g -km default
+
+# you should now have qmk_firmware. see qmk_firmware/keyboards/crkbd/r2g

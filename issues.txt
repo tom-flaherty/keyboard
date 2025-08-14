@@ -1,0 +1,6 @@
+Keyboard consistently freezes on grub/mint boot screen:
+	Layers do not change
+	I need to unplug and replug to get it working
+
+    Looks like a potential solution is here 
+    https://github.com/qmk/qmk_firmware/issues/21264

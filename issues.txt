@@ -4,3 +4,6 @@ Keyboard consistently freezes on grub/mint boot screen:
 
     Looks like a potential solution is here 
     https://github.com/qmk/qmk_firmware/issues/21264
+
+Keyboard is now completely bricked:
+    Hopefully this is resolved by the support ticket

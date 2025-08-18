@@ -18,4 +18,18 @@ qmk list-keyboards
 # to do a test compilatiom for the corne r2g
 qmk compile -kb crkbd/r2g -km default
 
-# you should now have qmk_firmware. see qmk_firmware/keyboards/crkbd/r2g
+# The board you have bought is not currently in the qmk_firmware repo
+git clone https://github.com/MechboardsLTD/qmk_firmware.git mechboards_qmk_firmware
+cd mechboards_qmk_firmware/
+git checkout corne_max
+git submodule update --init --recursive
+
+# Now when you compile you need to specify the path
+QMK_HOME=~/Projects/mechboards_qmk_firmware/ qmk compile -kb mechboards/crkbd/rp2g -km via
+
+# You should find the uf2 in mechboards_qmk_firmware/.build
+# You can copy tomf_keymap into
+# mechboards_qmk_firmware/keyboards/mechboards/crkbd/rp2g/keymaps
+QMK_HOME=~/Projects/mechboards_qmk_firmware/ qmk compile -kb mechboards/crkbd/rp2g -km tomf_keymap
+
+

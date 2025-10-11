@@ -34,6 +34,7 @@ entries = (
     Entry(date=datetime.date(2025,9,12), qwerty_wpm=61, colemak_wpm=42),
     Entry(date=datetime.date(2025,9,15), qwerty_wpm=67, colemak_wpm=44),
     Entry(date=datetime.date(2025,9,19), qwerty_wpm=66, colemak_wpm=49),
+    Entry(date=datetime.date(2025,10,11), qwerty_wpm=68, colemak_wpm=53),
 )
 
 def main():
